@@ -1,6 +1,7 @@
 import styles from "../../styles/user-auth.module.css"
 import google from "../../public/google_logo.svg"
 import logo from "../../public/skill_hunter.svg"
+import claws from "../../public/claws.svg"
 import Image from 'next/image';
 
 export default async function SignIn() {
@@ -44,9 +45,14 @@ export default async function SignIn() {
                             </button>
                         </div>
 
-                        <p className={styles.login__link}>Already have an account? <a href="#">Log in</a></p> 
+                        <p className={styles.login__link}>Already have an account? <a href="/login">Log in</a></p> 
                     
                     </form>
+
+                    <Image
+                        className="absolute left-0 bottom-0" 
+                        src={claws}
+                    />
                 
                 </div>
 

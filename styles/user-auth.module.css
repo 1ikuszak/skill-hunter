@@ -30,10 +30,6 @@
 }
 
 .header {
-    align-self: flex-start;
-    justify-self: flex-start;
-    align-items: flex-start;
-    justify-content: flex-start;
     font-size: 31.25px;
     font-weight: bold;
 }
@@ -124,4 +120,5 @@
 
 .login__link a {
   font-weight: bold;
+  text-decoration: underline;
 }
