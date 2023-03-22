@@ -1,4 +1,4 @@
-import styles from "../../styles/login.module.css"
+import styles from "../../styles/user-auth.module.css"
 
 export default async function Login() {
     return (
