@@ -6,7 +6,7 @@ export const InputField = ({text}) => {
         <>
             <div className={styles.form__group}>
                 <input type="text" id={text} name={text} required/>
-                <label for={text}>{text}</label>
+                <label htmlFor={text}>{text}</label>
             </div>
         </>
     )

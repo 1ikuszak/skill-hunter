@@ -1,7 +1,7 @@
 import google from "../../public/google_logo.svg"
 import logo from "../../public/skill_hunter.svg"
 import claws from "../../public/claws.svg"
-import Image from 'next/image';
+import Image from 'next/image'
 
 import {InputField, PasswordField} from '../../components/account/input_fields.jsx'
 
