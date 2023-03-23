@@ -1,8 +1,9 @@
-import styles from "../../styles/user-auth.module.css"
 import google from "../../public/google_logo.svg"
 import logo from "../../public/skill_hunter.svg"
 import claws from "../../public/claws.svg"
 import Image from 'next/image';
+import styles from "../../styles/user-auth.module.css"
+import {InputField, EmailField, PasswordField} from '../../components/account/input_fields.jsx'
 
 export default async function SignIn() {
     return (
@@ -19,20 +20,9 @@ export default async function SignIn() {
 
                     <form className="form">
 
-                        <div className={styles.form__group}>
-                            <input type="text" id="name" name="name" required/>
-                            <label for="name">Name</label>
-                        </div>
-
-                        <div className={styles.form__group}>
-                            <input type="text" id="email" name="email" required/>
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div className={styles.form__group}>
-                            <input type="password" id="password" name="password" required/>
-                            <label for="password">Password</label>
-                        </div>
+                        <InputField text="Name"/>
+                        <EmailField text="Email"/>
+                        <PasswordField text="Password"/>
 
                         <div className={styles.form__buttons}>
                             <button className={styles.button__signin}>Sign in</button>

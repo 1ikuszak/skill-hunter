@@ -1,9 +1,23 @@
 import '../styles/globals.css'
 import { Roboto } from 'next/font/google';
+import { Inter } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 
 const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+const inter = Inter({
+  weight: ['400', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+});
+const open_sans = Open_Sans({
+  weight: ['400', '700'],
+  style: ['normal'],
   subsets: ['latin'],
   display: 'swap',
 });
