@@ -26,7 +26,6 @@ module.exports = {
         secondary: '#7076EE',
         light: '#FFFFFF',
         dark: '#070714',
-        transparent_black: 'rgba(0,0,0,0.12)',
       }
     },
   },
