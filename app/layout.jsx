@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import { Roboto } from 'next/font/google';
 import { Inter } from 'next/font/google';
 import { Open_Sans } from 'next/font/google';
+import { Poppins } from 'next/font/google';
+
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -21,6 +23,12 @@ const open_sans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
 });
+const poppins = Poppins({
+  weight: ['400', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -29,7 +37,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en" className={poppins.className}>
       <body>{children}</body>
     </html>
   )

@@ -8,7 +8,7 @@ import {InputField, PasswordField} from '../../components/account/input_fields.j
 export default async function Login() {
     return (
         <div>
-            <div className="flex ">
+            <div className="flex">
                 <div className="flex flex-col items-center justify-center w-1/2 h-screen">
                     
                     <div className="flex flex-col mb-10">
